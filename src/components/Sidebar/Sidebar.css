@@ -1,0 +1,41 @@
+.sidebar{
+    position: relative;
+}
+
+.side-list{
+    position: absolute;
+    top: 4%;
+}
+
+.list-item{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.circular{
+    align-self: center;
+    margin-right: 1rem;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.side-menu-heading{
+    color:hsl(230, 19%, 74%);
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.side-menu-info{
+    color:white;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+ul{
+    list-style: none;
+}

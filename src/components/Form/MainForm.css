@@ -1,0 +1,74 @@
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.form-outer{
+    display: flex;
+    width: 56rem;
+    padding: 1.2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px hsl(229, 24%, 87%);
+}
+
+.sideform{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 3rem 0rem 7rem;
+    width: 100%;
+}
+
+.sideform:has(> .confirmed){ /*For confirmed page*/
+    margin: 0 3rem 0rem 7rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mobile-sidebar{
+    display: none;
+}
+
+
+@media(max-width:768px) {
+    .sideform{
+        margin: 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .mobile-sidebar{
+        display: block;
+        position: absolute;
+        top:0;
+        width: 100%;
+    }
+    .container{
+        align-items: flex-start;
+    }
+
+    .form-outer{
+        position: relative;
+        margin: 5rem 1rem;
+        padding-top: 3rem;
+        padding-bottom:3rem;
+    }
+    .sideItems{
+        display: flex;
+    }
+
+    .sideform:has(> .confirmed){ /*For confirmed page*/
+        margin: 0;
+        padding: 5rem 0;
+        height: 100%;
+    }
+}
+

@@ -1,0 +1,123 @@
+.heading{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.sub-heading{
+    color: gray;
+}
+
+.main-plans{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px ;
+}
+
+.plan-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 0 1.2rem 1rem;
+    margin-top: 1.5rem;
+    width: 8rem;
+    height: 10rem;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius:10px;
+}
+
+.plan-item:hover{
+    cursor: pointer;
+}
+
+.plan-icon{
+    height: 35px;
+    width: 35px;
+    text-align: left;
+}
+
+.plan-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-name{
+    font-weight: bold;
+}
+
+.plan-price{
+    color:gray;
+}
+
+.plan-yearly{
+    font-size: 13px;
+    text-align: left;
+}
+
+.toggle-plan{
+    padding: 0.65rem;
+    border-radius: 10px;
+    background-color: hsl(217, 100%, 97%);
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    color: hsl(213, 96%, 18%);
+}
+
+.toggle-item{
+    margin: 0 20px 0 20px;
+}
+
+.buttons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.submit-button{
+    background-color: hsl(213, 96%, 18%);
+    color:white;
+    border-radius: 5px;
+    border: none;
+    width: 6.45rem;
+    height: 2.7rem;
+    align-self: flex-end;
+}
+
+
+.submit-button:hover{
+    background-color: hsl(228, 84%, 54%);
+    cursor: pointer;
+}
+
+.back-button{
+    background-color: transparent;
+    color:gray;
+    border: none;
+    width: 6.45rem;
+    height: 2.7rem;
+    align-self: flex-end;
+}
+
+.back-button:hover{
+    color:rgb(180, 175, 175);
+    cursor: pointer;
+}
+
+
+@media(max-width:1000px){
+    .plan-item{
+        height: 5rem;
+        flex-basis: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        padding: 0 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .plan-info{
+        padding: 0 1rem;
+    }
+}

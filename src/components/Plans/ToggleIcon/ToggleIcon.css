@@ -1,0 +1,38 @@
+.togglebutton{
+}
+
+.toggle,.toggle:hover{
+    display: inline-block;
+    background-color: hsl(213, 96%, 18%);
+    position: relative;
+    border: 1px solid black;
+    width: 46px;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+
+.span::before{
+    position: absolute;
+    content: "";
+    top: 1px;
+    background-color: white;
+    height: 19px;
+    width: 18px;
+    top: 1px;
+    bottom: 1px;
+    left: 3px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#togglebox{
+   display: none;
+}
+
+input:checked + .toggle > .span:before{
+    transform: translateX(23px);
+}

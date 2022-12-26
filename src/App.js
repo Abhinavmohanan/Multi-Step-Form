@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { MainForm } from './components/Form/MainForm';
+import { StepProvider } from './Context/StepContext';
+import { FormProvider } from './Context/FormContext';
+import { PlanProvider } from './Context/PlanContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <StepProvider>
+      <FormProvider>
+        <PlanProvider>
+        <MainForm/>
+        </PlanProvider>
+      </FormProvider>
+    </StepProvider>  
+    </>
   );
 }
 
