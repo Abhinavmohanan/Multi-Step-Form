@@ -5,8 +5,8 @@ import {motion} from "framer-motion"
 import './Summary.css'
 
 export const Summary = () => {
-    const [step,updateStep] = useContext(StepContext)
-    const [plan,updatePlan] = useContext(PlanContext)
+    const [,updateStep] = useContext(StepContext)
+    const [plan,] = useContext(PlanContext)
     var sum = plan.toggle? plan.selectedPlan.cost*10: plan.selectedPlan.cost;
 
     const nextStep = ()=>{
@@ -22,6 +22,7 @@ export const Summary = () => {
     }  
 
     const getaddons = () =>{
+        // eslint-disable-next-line array-callback-return
         return (plan.addons.map((addon)=>{
             if(addon != null){
             const price = plan.toggle? addon.price*10 : addon.price

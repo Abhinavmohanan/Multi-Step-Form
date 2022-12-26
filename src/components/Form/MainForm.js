@@ -7,11 +7,10 @@ import { Sidebar } from '../Sidebar/Sidebar'
 import { SidebarMobile } from '../Sidebar/SidebarMobile'
 import {Sideform} from '../Sideform/Sideform'
 import { Summary } from '../Summary/Summary'
-import {motion} from 'framer-motion'
 import './MainForm.css'
 
 export const MainForm = () => {
-  const [step,updateStep] = useContext(StepContext);
+  const [step,] = useContext(StepContext);
   const steps = [<Sideform />,<Plans/>,<Addons/>,<Summary/>,<Confirm/>]
   return (
     <>

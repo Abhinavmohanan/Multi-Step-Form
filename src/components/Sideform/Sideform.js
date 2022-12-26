@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 import './Sideform.css'
 
 export const Sideform = () => {
-  const [step,updateStep] = useContext(StepContext)
+  const [,updateStep] = useContext(StepContext)
   const [Form,updateForm] = useContext(FormContext)
 //to set default values to named registered input field
 

@@ -9,7 +9,7 @@ import { PlanContext } from '../../Context/PlanContext'
 import {motion} from "framer-motion"
 
 export const Plans = () => {
-    const [step,updateStep] = useContext(StepContext)
+    const [,updateStep] = useContext(StepContext)
     const [plan,updatePlan] = useContext(PlanContext)
 
     const Plans = [{id:0,name:"Arcade",price:9},{id:1,name:"Advanced",price:12},{id:2,name:"Pro",price:15}]
